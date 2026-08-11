@@ -1,0 +1,2 @@
+class jantung {
+public:

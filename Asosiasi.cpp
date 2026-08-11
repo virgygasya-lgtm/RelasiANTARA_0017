@@ -7,7 +7,6 @@ class pasien { // asosiasi
 public:
     string nama;
     vector<dokter*> daftar_dokter;
-
     pasien(string pNama) :nama(pNama) {
         cout << "Pasien \"" << nama << "\" ada\n";
     }
@@ -68,19 +67,19 @@ int main() {
     pasien* varPasien1 = new pasien("Andi");
     pasien* varPasien2 = new pasien("Lia");
 
-        varDokter1->tambahPasien(varPasien1);
+    varDokter1->tambahPasien(varPasien1);
     varDokter1->tambahPasien(varPasien2);
-    varDokter2->tambahPasien(varPasien1); 
+    varDokter2->tambahPasien(varPasien1);
 
-        varDokter1->cetakPasien();
+    varDokter1->cetakPasien();
     varDokter2->cetakPasien();
     varPasien1->cetakDokter();
     varPasien2->cetakDokter();
 
-        delete varPasien1;
+    delete varPasien1;
     delete varPasien2;
     delete varDokter1;
     delete varDokter2;
 
-        return 0;
+    return 0;
 }
